@@ -1,0 +1,13 @@
+package br.com.nfdeveloper.cousethymeleaf.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class PessoaController {
+
+	@GetMapping("/cadastropessoa")
+	public String inicio() {
+		return "cadastro/cadastropessoa";
+	}
+}

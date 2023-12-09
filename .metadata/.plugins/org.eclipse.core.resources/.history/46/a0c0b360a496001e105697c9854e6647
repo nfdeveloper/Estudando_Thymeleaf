@@ -1,0 +1,5 @@
+package br.com.nfdeveloper.cousethymeleaf.repository;
+
+public interface PessoaRepository {
+
+}

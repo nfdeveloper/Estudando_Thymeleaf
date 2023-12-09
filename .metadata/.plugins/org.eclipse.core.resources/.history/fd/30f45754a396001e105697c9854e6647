@@ -1,0 +1,5 @@
+package br.com.nfdeveloper.cousethymeleaf.controller;
+
+public class PessoaController {
+
+}
