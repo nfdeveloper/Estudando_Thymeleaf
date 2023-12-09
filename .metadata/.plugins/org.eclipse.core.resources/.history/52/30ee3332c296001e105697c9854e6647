@@ -19,7 +19,7 @@
 		<input name="sobrenome" />
 		<label>Idade</label>
 		<input name="idade" />
-		<input class="waves-effect waves-light btn" type="submit" value="Salvar" />
+		<input type="submit" value="Salvar" />
 	</form>
 	
 	<a href="/listapessoas">Listar Pessoas</a>
@@ -34,6 +34,5 @@
 	
 	
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-	<script type="text/javascript" src="materialize/js/materialize.js"></script>
 </body>	
 </html>
