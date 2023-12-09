@@ -1,0 +1,5 @@
+package br.com.nfdeveloper.cousethymeleaf.model;
+
+public class Pessoa {
+
+}
