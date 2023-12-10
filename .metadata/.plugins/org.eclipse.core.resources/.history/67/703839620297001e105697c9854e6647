@@ -61,8 +61,7 @@ public class PessoaController {
 		pessoaRepository.deleteById(idpessoa);
 		
 		ModelAndView modelAndView = new ModelAndView("cadastro/cadastropessoa");
-		modelAndView.addObject("pessoas", pessoaRepository.findAll());
-		modelAndView.addObject("pessoaobj", new Pessoa());
+		modelAndView.addObject("pessoaobj", pessoaRepository.findAll());
 		return modelAndView;
 	}
 }

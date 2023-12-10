@@ -62,7 +62,7 @@ public class PessoaController {
 		
 		ModelAndView modelAndView = new ModelAndView("cadastro/cadastropessoa");
 		modelAndView.addObject("pessoas", pessoaRepository.findAll());
-		modelAndView.addObject("pessoaobj", new Pessoa());
+		modelAndView.addObject("pessoaobj", pessoa.get());
 		return modelAndView;
 	}
 }

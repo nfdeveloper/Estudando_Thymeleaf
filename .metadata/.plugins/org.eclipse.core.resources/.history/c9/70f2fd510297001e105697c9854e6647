@@ -58,11 +58,10 @@ public class PessoaController {
 	
 	@GetMapping("/removerpessoa/{idpessoa}")
 	public ModelAndView remover(@PathVariable("idpessoa") Long idpessoa) {
-		pessoaRepository.deleteById(idpessoa);
+		Optional<Pessoa> pessoa = pessoaRepository.findById(idpessoa);
 		
 		ModelAndView modelAndView = new ModelAndView("cadastro/cadastropessoa");
-		modelAndView.addObject("pessoas", pessoaRepository.findAll());
-		modelAndView.addObject("pessoaobj", new Pessoa());
+		modelAndView.addObject("pessoaobj", pessoa.get());
 		return modelAndView;
 	}
 }
