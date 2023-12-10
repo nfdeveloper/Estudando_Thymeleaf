@@ -76,7 +76,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr th:each="pessoa : ${pessoas}">
+			<tr :each="pessoa : ${pessoas}">
 				<td th:text = "${pessoa.id}" ></td>
 				<td th:text = "${pessoa.nome}" ></td>
 				<td th:text = "${pessoa.sobrenome}" ></td>
