@@ -1,0 +1,10 @@
+spring.datasource.url=jdbc:postgresql://localhost:5432/estudandothymeleaf
+spring.datasource.username=postgres
+spring.datasource.password=nilton13
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.hibernate.ddl-auto=update 
+
+
+spring.web.resources.chain.strategy.fixed.enabled=true
+spring.web.resources.chain.strategy.fixed.paths=/**
+spring.web.resources.chain.strategy.fixed.version=v1
