@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;cadastropessoa.html&apos; to &apos;cadastro&apos;&#x0D;&#x0A;- Original project: &apos;cousethymeleaf&apos;&#x0D;&#x0A;- Destination element: &apos;cadastro&apos;&#x0D;&#x0A;- Original element: &apos;cadastropessoa.html&apos;" description="Copy file" element1="src/main/resources/templates/cadastro/cadastropessoa.html" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1702347643321" target="/cousethymeleaf/src/main/resources/templates/cadastro" units="0" version="1.0"/>
+</session>
