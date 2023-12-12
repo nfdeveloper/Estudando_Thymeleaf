@@ -1,0 +1,13 @@
+package br.com.nfdeveloper.cousethymeleaf.repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import br.com.nfdeveloper.cousethymeleaf.model.Telefone;
+import jakarta.transaction.Transactional;
+
+@Repository
+@Transactional
+public interface TelefoneRepository extends CrudRepository<Telefone, Long>{
+
+}
