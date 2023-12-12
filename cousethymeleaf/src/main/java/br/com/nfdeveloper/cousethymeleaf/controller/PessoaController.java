@@ -11,13 +11,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.com.nfdeveloper.cousethymeleaf.model.Pessoa;
+import br.com.nfdeveloper.cousethymeleaf.model.Telefone;
 import br.com.nfdeveloper.cousethymeleaf.repository.PessoaRepository;
+import br.com.nfdeveloper.cousethymeleaf.repository.TelefoneRepository;
 
 @Controller
 public class PessoaController {
 	
 	@Autowired
 	private PessoaRepository pessoaRepository;
+	
+	@Autowired
+	private TelefoneRepository telefoneRepository;
 
 	@GetMapping("/cadastropessoa")
 	public ModelAndView inicio() {
@@ -86,6 +91,18 @@ public class PessoaController {
 		
 		ModelAndView modelAndView = new ModelAndView("cadastro/telefones");
 		modelAndView.addObject("pessoaobj", pessoa.get());
+		return modelAndView;
+	}
+	
+	@PostMapping("/addfonePessoa/{pessoaid}")
+	public ModelAndView addFonePessoa(Telefone telefone, 
+										@PathVariable("pessoaid") Long pessoaid) {
+		Pessoa pessoa = pessoaRepository.findById(pessoaid).get();
+		telefone.setPessoa(pessoa);
+		telefoneRepository.save(telefone);
+		
+		ModelAndView modelAndView = new ModelAndView("cadastro/telefones");
+		modelAndView.addObject("pessoaobj", pessoa);
 		return modelAndView;
 	}
 }
